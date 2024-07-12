@@ -102,7 +102,7 @@ async function generateLocation(
 }
 
 // See https://stackoverflow.com/a/27943/10975709
-function getDistanceFromLatLonInKm(
+export function getDistanceFromLatLonInKm(
   lat1: number,
   lon1: number,
   lat2: number,
@@ -125,14 +125,19 @@ function getDistanceFromLatLonInKm(
   return d;
 }
 
-function deg2rad(deg: number) {
+/**
+ * Converts degrees to radians.
+ * @param deg 
+ * @returns
+ */
+export function deg2rad(deg: number) {
   return deg * (Math.PI / 180);
 }
 
 /**
  * Returns a set of coordinates based on input. If resulting coordinates are farther than maximum_distance or nearer than minimum_distance, coordinates get rolled again
  */
-async function getLocationCoordinates(
+export async function getLocationCoordinates(
   latitude: number,
   longitude: number,
   maximum_distance: number,

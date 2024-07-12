@@ -74,9 +74,11 @@ export default async function handleItems(
         case MAP_ID_TO_ITEM.MACGUFFIN_A:
           macguffinString = macguffinString.replace("A", "");
           break;
+
         case MAP_ID_TO_ITEM.MACGUFFIN_R:
           macguffinString = macguffinString.replace("r", "");
           break;
+
         case MAP_ID_TO_ITEM.MACGUFFIN_C:
           macguffinString = macguffinString.replace("c", "");
           break;
